@@ -1,3 +1,8 @@
+You can test this project with this URL:
+https://frankromanob.github.io/cat-random-react-ts/
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

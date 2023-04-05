@@ -4,9 +4,9 @@ export const fetchCat = async (catText:string, catTags:string):Promise<string> =
     let uriFetch=URI_BASE
     if (catTags.length) {catTags='/'+catTags};
     if (catText.length) {
-        uriFetch=uriFetch+API_CAT+catTags+API_SAY+catText+API_JSON
+        uriFetch+=API_CAT+catTags+API_SAY+catText+API_JSON
     } else{
-        uriFetch=uriFetch+API_CAT+catTags+API_JSON};
+        uriFetch+=API_CAT+catTags+API_JSON};
     console.log('Uri: ',uriFetch);
     const data = await fetch(uriFetch, {
       method: "GET"

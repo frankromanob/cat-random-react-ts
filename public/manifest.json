@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Cat Random",
+  "name": "A random cat from CATAAS",
   "icons": [
     {
       "src": "favicon.ico",

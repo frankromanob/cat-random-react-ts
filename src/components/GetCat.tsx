@@ -35,8 +35,8 @@ export const GetCat = () => {
                         value={valueTag} onChange={handleChangeTag} /> */}
                     <select id='catTag' className="rounded border-sky-500 m-2 border-2 hover:border-green-700"
                         value={valueTag} onChange={handleChangeTag}>
-                        {cat.catTags.map((tag,index)=>(
-                            <option key={index}  value={tag}>{tag}</option>
+                        {cat.catTags.map((tag, index) => (
+                            <option key={index} value={tag}>{tag}</option>
                         ))}
                     </select>
                 </div>

@@ -5,14 +5,15 @@ export const GetCat = () => {
     const [valueSay, setValueSay] = useState<string>('');
     const [valueTag, setValueTag] = useState<string>('');
     const cat = useCats()
+   // console.log(cat)
 
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
         setValueSay(e.target.value)
-        cat.setCatSay(e.target.value)
+        cat.setCatSay(e.target.value.toLowerCase())
     }
     const handleChangeTag = (e: ChangeEvent<HTMLSelectElement>) => {
         setValueTag(e.target.value)
-        cat.setCatTag(e.target.value)
+        cat.setCatTag(e.target.value.toLowerCase())
     }
     return (
         <div className="flex flex-col items-center justify-center">

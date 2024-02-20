@@ -17,7 +17,7 @@ export const useCats = () => {
     //   const [result, setResult] = useState<resultProps[]>([]);
     useEffect(() => {
         const cat = async () => {
-            setCatImg('cat-random-react-ts/loading.gif')
+            setCatImg('/loading.gif')
             const data = await fetchCat(catSay,catTag)
             setCatImg(data)
         }
@@ -30,7 +30,7 @@ export const useCats = () => {
     },[])
 
     const getCat = async () => {
-        setCatImg('cat-random-react-ts/loading.gif')
+        setCatImg('/loading.gif')
         const data = await fetchCat(catSay,catTag)
         setCatImg(data)
     }
